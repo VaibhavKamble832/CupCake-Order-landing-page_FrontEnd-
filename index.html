@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="ball"></div>
+    <section>
+        <header>
+            <a href=""><img src="imges/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#"></a>HOME</li>
+                <li><a href="#"></a>MENU</li>
+                <li><a href="#"></a>CONTACT</li>
+                <li><a href="#"></a>FAQ</li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="content">
+                <h1>Shop <span>CupCakes</span></h1>
+                <h2>Order Cupcakes for your party.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime atque impedit earum libero minima
+                    aliquid saepe autem, laboriosam totam dolores. Esse optio aperiam voluptatum repudiandae
+                    exercitationem recusandae corporis molestiae quas, illo unde? Nisi facere excepturi officiis? Sit
+                    vitae totam distinctio?</p>
+                <a href="#">Order Now</a>
+            </div>
+        </div>
+
+        <div class="products">
+            <img src="imges/img1.png" class="cupcakes">
+        </div>
+
+        <ul class="click">
+            <li><img src="imges/img1.png" onclick="imgSlider('imges/img1.png');changeColor('rgb(141, 73, 25)')"></li>
+            <li><img src="imges/img2.png" onclick="imgSlider('imges/img2.png');changeColor('#D7004D')"></li>
+            <li><img src="imges/img3.gif" onclick="imgSlider('imges/img3.gif');changeColor('#B6E388')"></li>
+        </ul>
+
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.cupcakes').src = anything;
+            }
+
+            function changeColor(color) {
+                const ball = document.querySelector('.ball');
+                ball.style.background = color;
+            }
+        </script>
+    </section>
+
+</body>
+
+</html>
